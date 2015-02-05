@@ -3,12 +3,14 @@ public class Cardss
 	{
 	public static void cardGenerator()
 		{
-		int randomCard = (int)(Math.random()*29)+1;
+		System.out.println();
+		int randomCard = (int)(Math.random()*25)+1;
 		String [] cardColor = {"red", "yellow", "orange", "green", "blue", "purple", "gingerbread", "peppermint", "peanut", "lollypop", "ice cream"};
 			if(randomCard == 1)
 				{
 				String a = cardColor[1/*red*/];
 				System.out.println("red");
+				
 				}
 			if(randomCard == 2)
 				{
@@ -42,23 +44,23 @@ public class Cardss
 				}
 			if(randomCard == 8)
 				{
-				String h = cardColor[8/*peppermint*/];
-				System.out.println("peppermint");
+				String cc = cardColor[3/*orange*/];
+				System.out.println("orange3");
 				}
 			if(randomCard == 9)
 				{
-				String i = cardColor[9/*peanut*/];
-				System.out.println("peanut");
+				String dc = cardColor[4/*green*/];
+				System.out.println("green3");
 				}
 			if(randomCard == 10)
 				{
-				String j = cardColor[10/*lollypop*/];
-				System.out.println("lollypop");
+				String ec = cardColor[5/*blue*/];
+				System.out.println("blue3");
 				}
 			if(randomCard == 11)
 				{
-				String k = cardColor[11/*ice cream*/];
-				System.out.println("ice cream");
+				String fc = cardColor[6/*purple*/];
+				System.out.println("purple3");
 				}
 			if(randomCard == 12)
 				{
@@ -130,27 +132,7 @@ public class Cardss
 				String bc = cardColor[2/*yellow*/];
 				System.out.println("yellow3");
 				}
-			if(randomCard == 26)
-				{
-				String cc = cardColor[3/*orange*/];
-				System.out.println("orange3");
-				}
-			if(randomCard == 27)
-				{
-				String dc = cardColor[4/*green*/];
-				System.out.println("green3");
-				}
-			if(randomCard == 28)
-				{
-				String ec = cardColor[5/*blue*/];
-				System.out.println("blue3");
-				}
-			if(randomCard == 29)
-				{
-				String fc = cardColor[6/*purple*/];
-				System.out.println("purple3");
-				}
 			
-			System.out.println(randomCard);
+			System.out.println("random card selection: " + randomCard);
 		}
 	}

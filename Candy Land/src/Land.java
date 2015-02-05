@@ -8,13 +8,90 @@ public class Land
 		spaceColor = sc;
 		spaceNum = sn;
 		}
-	static ArrayList <Land> spaces = new ArrayList <Land>();
-	public static void declareBoard()
+	static String spaces []= new String [10];	
+	[] spaces = {"red", "purple", "yellow", "blue", "orange", "green", "red", "gingerbread", "yellow", "blue"};
+	
+	public static void displayBoard()
 		{
-		spaces.add(new Land ("red", 1));
-		spaces.add(new Land ("purple", 2));
+		System.out.print("-----------------------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.println("-------");
+		//top of boxes
+		System.out.print("|");
+		System.out.print("     START LINE!");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.print("     |");
+		System.out.print(" ");
+		System.out.print("|");
+		System.out.println("     |");
+		//inside and sides of boxes
+		System.out.print("-----------------------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.print("-------");
+		System.out.print(" ");
+		System.out.println("-------");
+		//bottom of boxes
 		}
-
 
 	public String getSpaceColor()
 		{
@@ -31,13 +108,5 @@ public class Land
 	public void setSpaceNum(int spaceNum)
 		{
 		this.spaceNum = spaceNum;
-		}
-	public static ArrayList<Land> getSpaces()
-		{
-		return spaces;
-		}
-	public static void setSpaces(ArrayList<Land> spaces)
-		{
-		Land.spaces = spaces;
 		}
 	}
