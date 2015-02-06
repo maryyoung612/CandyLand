@@ -1,16 +1,24 @@
 import java.util.Scanner;
 public class Cardss
 	{
+	static String playerMove;
+	static int randomCard;
 	public static void cardGenerator()
 		{
 		System.out.println();
-		int randomCard = (int)(Math.random()*25)+1;
-		String [] cardColor = {"red", "yellow", "orange", "green", "blue", "purple", "gingerbread", "peppermint", "peanut", "lollypop", "ice cream"};
+		randomCard = (int)(Math.random()*19)+1;
+		String [] cardColor = {"red", "yellow", "orange", "green", "blue", "purple", "gingerbread"};
 			if(randomCard == 1)
 				{
 				String a = cardColor[1/*red*/];
 				System.out.println("red");
-				
+				for (int i = 0; i < Land.boardSpaces[i].length(); i++)
+					{
+					if (randomCard == cardColor[1])
+						{
+						Land.boardSpaces[i] = Player.characterChoice;
+						}
+					}
 				}
 			if(randomCard == 2)
 				{
@@ -64,70 +72,40 @@ public class Cardss
 				}
 			if(randomCard == 12)
 				{
-				String A = cardColor[1/*red*/] + cardColor[1/*red*/];
-				System.out.println("2 red");
-				}
-			if(randomCard == 13)
-				{
-				String B = cardColor[2/*yellow*/] + cardColor[2/*yellow*/];
-				System.out.println("2 yellow");
-				}
-			if(randomCard == 14)
-				{
-				String C = cardColor[3/*orange*/] + cardColor[3/*orange*/];
-				System.out.println("2 orange");
-				}
-			if(randomCard == 15)
-				{
-				String D = cardColor[4/*green*/] + cardColor[4/*green*/];
-				System.out.println("2 green");
-				}
-			if(randomCard == 16)
-				{
-				String E = cardColor[5/*blue*/] + cardColor[5/*blue*/];
-				System.out.println("2 blue");
-				}
-			if(randomCard == 17)
-				{
-				String F = cardColor[6/*purple*/] + cardColor[6/*purple*/];
-				System.out.println("2 purple");
-				}
-			if(randomCard == 18)
-				{
 				String ab = cardColor[1/*red*/];
 				System.out.println("red2");
 				}
-			if(randomCard == 19)
+			if(randomCard == 13)
 				{
 				String bb = cardColor[2/*yellow*/];
 				System.out.println("yellow2");
 				}
-			if(randomCard == 20)
+			if(randomCard == 14)
 				{
 				String cb = cardColor[3/*orange*/];
 				System.out.println("orange2");
 				}
-			if(randomCard == 21)
+			if(randomCard == 15)
 				{
 				String db = cardColor[4/*green*/];
 				System.out.println("green2");
 				}
-			if(randomCard == 22)
+			if(randomCard == 16)
 				{
 				String eb = cardColor[5/*blue*/];
 				System.out.println("blue2");
 				}
-			if(randomCard == 23)
+			if(randomCard == 17)
 				{
 				String fb = cardColor[6/*purple*/];
 				System.out.println("purple2");
 				}
-			if(randomCard == 24)
+			if(randomCard == 18)
 				{
 				String ac = cardColor[1/*red*/];
 				System.out.println("red3");
 				}
-			if(randomCard == 25)
+			if(randomCard == 19)
 				{
 				String bc = cardColor[2/*yellow*/];
 				System.out.println("yellow3");

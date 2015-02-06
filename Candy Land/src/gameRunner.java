@@ -5,5 +5,6 @@ public class gameRunner
 		Player.introToPLayer();
 		Land.displayBoard();
 		Player.playerMove();
+		Land.displayBoard();
 		}
 	}
