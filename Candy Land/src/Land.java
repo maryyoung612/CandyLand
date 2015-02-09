@@ -1,7 +1,7 @@
-import java.util.ArrayList;
+import java.util.Scanner;
 public class Land
 	{
-	static String [] boardSpaces = {"START LINE" ,"red","purple", "yellow", "blue", "orange", "green", "red", "gingerbread", "yellow", "blue", "FINISH LINE"};
+	static String [] boardSpaces = {"START LINE" ,"red","yellow", "orange", "green", "blue", "purple", "red", "gingerbread", "yellow", "orange", "FINISH LINE"};
 	
 	public static void displayBoard()
 		{

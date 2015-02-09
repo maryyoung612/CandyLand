@@ -3,6 +3,8 @@ public class Player
 	{
 	static String characterChoice;
 	static String newAIToken;
+	static int location = 0;
+	static String AILocation;
 	public static void introToPLayer()
 		{
 		Scanner userInput = new Scanner(System.in);
@@ -18,6 +20,7 @@ public class Player
 			{
 			newAIToken = "X";
 			}
+		System.out.println(location);
 		}
 	public static void playerMove()
 		{
@@ -25,6 +28,5 @@ public class Player
 		System.out.println("Draw a card.");
 		String playerDraw = userInput.nextLine();
 		Cardss.cardGenerator();
-		
 		}
 	}
