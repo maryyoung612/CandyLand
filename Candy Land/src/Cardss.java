@@ -3,11 +3,12 @@ public class Cardss
 	{
 	static String playerMove;
 	static int randomCard;
+	static String [] cardColor = {"red", "yellow", "orange", "green", "blue", "purple", "gingerbread"};
 	public static void cardGenerator()
 		{
 		System.out.println();
 		randomCard = (int)(Math.random()*19)+1;
-		String [] cardColor = {"red", "yellow", "orange", "green", "blue", "purple", "gingerbread"};
+		 
 			if(randomCard == 1)
 				{
 				String a = cardColor[1/*red*/];
