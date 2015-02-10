@@ -2,25 +2,14 @@ import java.util.Scanner;
 public class Player
 	{
 	static String characterChoice;
-	static String newAIToken;
 	static int location = 0;
-	static String AILocation;
 	public static void introToPLayer()
 		{
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("Welcome to Candy Land!");
-		System.out.println("You will draw a card on your turn, try to get to the end first!");
-		System.out.println("would you like to be X or O?");
-		characterChoice = userInput.nextLine();
-		if (characterChoice.equals("X") || characterChoice.equals("x"))
-			{
-			newAIToken = "O";
-			}
-		else if(characterChoice.equals("O") || characterChoice.equals("o"))
-			{
-			newAIToken = "X";
-			}
-		System.out.println(location);
+		System.out.println("You will draw a card on your turn, try to get to the end!");
+		System.out.println("What single letter do you want to be your character token?");
+		characterChoice = userInput.nextLine();	
 		}
 	public static void playerMove()
 		{

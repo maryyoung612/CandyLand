@@ -4,7 +4,16 @@ public class gameRunner
 		{
 		Player.introToPLayer();
 		Land.displayBoard();
-		Player.playerMove();
-		Land.displayBoard();
+		boolean gameIsWon = false;
+		while (!gameIsWon)
+			{
+			Player.playerMove();
+			Land.displayBoard();
+			if (Land.boardSpaces[Player.location].equals(Land.boardSpaces[11]))
+				{
+				System.out.println("YOU WIN!");
+				System.exit(0);
+				}
+			}
 		}
 	}

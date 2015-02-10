@@ -1,8 +1,7 @@
 import java.util.Scanner;
 public class Land
 	{
-	static String [] boardSpaces = {"START LINE" ,"red","yellow", "orange", "green", "blue", "purple", "red", "gingerbread", "yellow", "orange", "FINISH LINE"};
-	
+	static String [] boardSpaces = {"START LINE" ,"red","yellow", "orange", "green", "blue", "purple", "red", "yellow", "orange", "green", "FINISH LINE"};
 	public static void displayBoard()
 		{
 		System.out.print("-----------------------");
@@ -54,13 +53,13 @@ public class Land
 		System.out.print("         |");
 		System.out.print(" ");
 		System.out.print("|" + boardSpaces[8]);
-		System.out.print(" |");
+		System.out.print("      |");
 		System.out.print(" ");
 		System.out.print("|" + boardSpaces[9]);
 		System.out.print("      |");
 		System.out.print(" ");
 		System.out.print("|" + boardSpaces[10]);
-		System.out.print("        |");
+		System.out.print("       |");
 		System.out.print(" ");
 		System.out.print("|"+ "     " + boardSpaces[11]);
 		System.out.println("     |");
