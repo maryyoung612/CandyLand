@@ -1,9 +1,23 @@
-import java.util.Scanner;
+import java.util.ArrayList;
 public class Land
 	{
-	static String [] boardSpaces = {"START LINE" ,"red","yellow", "orange", "green", "blue", "purple", "red", "yellow", "orange", "green", "FINISH LINE"};
+	static ArrayList <String> boardSpaces = new ArrayList<String>();
 	public static void displayBoard()
 		{
+		
+		boardSpaces.add("START LINE");
+		boardSpaces.add("red");
+		boardSpaces.add("yellow");
+		boardSpaces.add("orange");
+		boardSpaces.add("green");
+		boardSpaces.add("blue");
+		boardSpaces.add("purple");
+		boardSpaces.add("red");
+		boardSpaces.add("yellow");
+		boardSpaces.add("orange");
+		boardSpaces.add("green");
+		boardSpaces.add("FINISH LINE");
+		
 		System.out.print("-----------------------");
 		System.out.print(" ");
 		System.out.print("--------------");
@@ -28,40 +42,40 @@ public class Land
 		System.out.print(" ");
 		System.out.println("-----------------------");
 		//top of boxes
-		System.out.print("|"+ "      " + boardSpaces[0]);
+		System.out.print("|"+ "      " + boardSpaces.get(0));
 		System.out.print("     |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[1]);
+		System.out.print("|" + boardSpaces.get(1));
 		System.out.print("         |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[2]);
+		System.out.print("|" + boardSpaces.get(2));
 		System.out.print("      |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[3]);
+		System.out.print("|" + boardSpaces.get(3));
 		System.out.print("      |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[4]);
+		System.out.print("|" + boardSpaces.get(4));
 		System.out.print("        |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[5]);
+		System.out.print("|" + boardSpaces.get(5));
 		System.out.print("      |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[6]);
+		System.out.print("|" + boardSpaces.get(6));
 		System.out.print("       |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[7]);
+		System.out.print("|" + boardSpaces.get(7));
 		System.out.print("         |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[8]);
+		System.out.print("|" + boardSpaces.get(8));
 		System.out.print("      |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[9]);
+		System.out.print("|" + boardSpaces.get(9));
 		System.out.print("      |");
 		System.out.print(" ");
-		System.out.print("|" + boardSpaces[10]);
+		System.out.print("|" + boardSpaces.get(10));
 		System.out.print("       |");
 		System.out.print(" ");
-		System.out.print("|"+ "     " + boardSpaces[11]);
+		System.out.print("|"+ "     " + boardSpaces.get(11));
 		System.out.println("     |");
 		//inside and sides of boxes
 		System.out.print("-----------------------");

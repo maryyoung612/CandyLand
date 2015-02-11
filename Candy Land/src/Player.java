@@ -17,5 +17,6 @@ public class Player
 		System.out.println("Draw a card.");
 		String playerDraw = userInput.nextLine();
 		Cardss.cardGenerator();
+		Cardss.replaceBoardName();
 		}
 	}
