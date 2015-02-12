@@ -14,59 +14,55 @@ public class Cardss
 		{
 		System.out.println();
 		int randomCard = (int)(Math.random()*6)+1;
-		System.out.println("card number:" + randomCard);
+		
 			if(randomCard == 1)
 				{
 				color = cardColor[1];
-				System.out.println("red");
+				System.out.println("Card color: red");
 				}
 			if(randomCard == 2)
 				{
 				color = cardColor[2];
-				System.out.println("yellow");
+				System.out.println("Card color: yellow");
 				}
 			if(randomCard == 3)
 				{
 				color = cardColor[3];
-				System.out.println("orange");
+				System.out.println("Card color: orange");
 				}
 			if(randomCard == 4)
 				{
 				color = cardColor[4];
-				System.out.println("green");
+				System.out.println("Card color: green");
 				}
 			if(randomCard == 5)
 				{
 				color = cardColor[5];
-				System.out.println("blue");
+				System.out.println("Card color: blue");
 				}
 			if(randomCard == 6)
 				{
 				color = cardColor[6];
-				System.out.println("purple");
+				System.out.println("Card color: purple");
 				}
 			
-		for (int i = Player.location + 1; i <= Player.location; i++)
+		for (int i = Player.location + 1; i <= Land.boardSpaces.size(); i++)
 			{
 			if (Land.boardSpaces.get(i).equals(color))
 				{
-				Player.location = ((Object) Land.boardSpaces).nextIndex(color);
-				temp = Land.boardSpaces.getPlayer.location;
-				Land.boardSpaces.getPlayer.location = Player.characterChoice + "     ";
-				}
-			else if (!Land.boardSpaces.get(i).equals(color))
-				{
+				int oldLocation = Player.location;
+				
+				temp = Land.boardSpaces.get(oldLocation);
+				
 				Player.location = i;
-				temp = Land.boardSpaces.getPlayer.location;
-				Land.boardSpaces.get(11) = Player.characterChoice + "        ";
+				Land.boardSpaces.set(Player.location, Player.characterChoice + "     ");
+				Land.boardSpaces.set(oldLocation, Land.originalBoardSpaces.get(oldLocation));
+				i = Land.boardSpaces.size();
 				}
 			}
 		}
-		public static void replaceBoardName()
-			{
-			temp = Land.boardSpaces.getPlayer.location;
-			Land.boardSpaces.getPlayer.location = temp;
-			}
+	
+	
 	public int getRandomCard()
 		{
 		return randomCard;

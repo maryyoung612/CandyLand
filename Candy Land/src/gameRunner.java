@@ -9,9 +9,10 @@ public class gameRunner
 			{
 			Player.playerMove();
 			Land.displayBoard();
-			if (Land.boardSpaces.getPlayer.location.equals(Land.boardSpaces.get(11))
+			if (Player.location >= 16)
 				{
-				System.out.println("YOU WIN!");
+				System.out.println();
+				System.out.println("YOU WIN! Your skill level is that of a preschooler!");
 				System.exit(0);
 				}
 			}

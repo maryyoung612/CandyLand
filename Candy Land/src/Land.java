@@ -2,9 +2,9 @@ import java.util.ArrayList;
 public class Land
 	{
 	static ArrayList <String> boardSpaces = new ArrayList<String>();
+	static ArrayList <String> originalBoardSpaces = new ArrayList<String>();
 	public static void displayBoard()
 		{
-		
 		boardSpaces.add("START LINE");
 		boardSpaces.add("red");
 		boardSpaces.add("yellow");
@@ -16,7 +16,30 @@ public class Land
 		boardSpaces.add("yellow");
 		boardSpaces.add("orange");
 		boardSpaces.add("green");
+		//10 spaces
+		boardSpaces.add("blue");
+		boardSpaces.add("purple");
+		boardSpaces.add("red");
+		boardSpaces.add("yellow");
+		boardSpaces.add("orange");
 		boardSpaces.add("FINISH LINE");
+		originalBoardSpaces.add("START LINE");
+		originalBoardSpaces.add("red");
+		originalBoardSpaces.add("yellow");
+		originalBoardSpaces.add("orange");
+		originalBoardSpaces.add("green");
+		originalBoardSpaces.add("blue");
+		originalBoardSpaces.add("purple");
+		originalBoardSpaces.add("red");
+		originalBoardSpaces.add("yellow");
+		originalBoardSpaces.add("orange");
+		originalBoardSpaces.add("green");
+		originalBoardSpaces.add("blue");
+		originalBoardSpaces.add("purple");
+		originalBoardSpaces.add("red");
+		originalBoardSpaces.add("yellow");
+		originalBoardSpaces.add("orange");
+		originalBoardSpaces.add("FINISH LINE");
 		
 		System.out.print("-----------------------");
 		System.out.print(" ");
@@ -29,6 +52,17 @@ public class Land
 		System.out.print("--------------");
 		System.out.print(" ");
 		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		//space 10
 		System.out.print(" ");
 		System.out.print("--------------");
 		System.out.print(" ");
@@ -74,8 +108,24 @@ public class Land
 		System.out.print(" ");
 		System.out.print("|" + boardSpaces.get(10));
 		System.out.print("       |");
+		//10 spaces
 		System.out.print(" ");
-		System.out.print("|"+ "     " + boardSpaces.get(11));
+		System.out.print("|" + boardSpaces.get(11));
+		System.out.print("       |");
+		System.out.print(" ");
+		System.out.print(" ");
+		System.out.print("|" + boardSpaces.get(12));
+		System.out.print("       |");
+		System.out.print(" ");
+		System.out.print("|" + boardSpaces.get(13));
+		System.out.print("       |");
+		System.out.print(" ");
+		System.out.print("|" + boardSpaces.get(14));
+		System.out.print("       |");
+		System.out.print(" ");
+		System.out.print("|" + boardSpaces.get(15));
+		System.out.print("       |");
+		System.out.print("|"+ "     " + boardSpaces.get(16));
 		System.out.println("     |");
 		//inside and sides of boxes
 		System.out.print("-----------------------");
@@ -89,6 +139,17 @@ public class Land
 		System.out.print("--------------");
 		System.out.print(" ");
 		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		System.out.print(" ");
+		System.out.print("--------------");
+		//10 spaces
 		System.out.print(" ");
 		System.out.print("--------------");
 		System.out.print(" ");
